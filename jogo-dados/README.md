@@ -55,3 +55,6 @@ git remote add origin <URL_DO_SEU_REPOSITORIO>
 git push -u origin main
 ```
 
+Link vercell
+
+https://jogo-dados-smoky.vercel.app/
