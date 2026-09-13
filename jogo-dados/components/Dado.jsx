@@ -9,10 +9,7 @@ const IMAGENS_DADO = {
   6: "/dados/dado-6.svg",
 };
 
-/**
- * Exibe a imagem do dado correspondente ao valor sorteado (1 a 6).
- * As imagens ficam em /public/dados e são servidas pelo próprio projeto.
- */
+
 export default function Dado({ valor, animando = false }) {
   const src = IMAGENS_DADO[valor] ?? IMAGENS_DADO[1];
 
