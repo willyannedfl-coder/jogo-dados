@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --cor-mesa-1: #143d31;
+  --cor-mesa-2: #0d2c24;
+  --cor-cartao: #fbf6ec;
+  --cor-tinta: #22201b;
+  --cor-tinta-suave: #6b6558;
+  --cor-linha: #e3d8bf;
+  --cor-jogador1: #2c6e9e;
+  --cor-jogador1-suave: #e5eef5;
+  --cor-jogador2: #c1502e;
+  --cor-jogador2-suave: #f6e7e0;
+  --cor-dourado: #d9a441;
+  --cor-dourado-escuro: #b3822d;
+  --cor-empate: #6b6558;
+  --fonte-titulo: "Fredoka", ui-rounded, "Segoe UI", sans-serif;
+  --fonte-texto: "Inter", "Segoe UI", sans-serif;
+  --sombra-cartao: 0 24px 60px -20px rgba(0, 0, 0, 0.45);
+  --raio-cartao: 28px;
+  --raio-botao: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--fonte-texto);
+  color: var(--cor-tinta);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.05), transparent 40%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.015) 0px,
+      rgba(255, 255, 255, 0.015) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(160deg, var(--cor-mesa-1), var(--cor-mesa-2));
+  background-attachment: fixed;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  margin: 0;
+}

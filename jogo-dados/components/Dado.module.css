@@ -1,0 +1,43 @@
+.dado {
+  width: 64px;
+  height: 64px;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25));
+}
+
+.imagem {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.rolando {
+  animation: girar 0.45s ease-out;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  35% {
+    transform: rotate(-18deg) scale(1.08);
+  }
+  70% {
+    transform: rotate(12deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rolando {
+    animation: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .dado {
+    width: 48px;
+    height: 48px;
+  }
+}

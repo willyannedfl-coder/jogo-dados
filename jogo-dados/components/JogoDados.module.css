@@ -1,0 +1,160 @@
+.cartao {
+  width: 100%;
+  max-width: 520px;
+  background: var(--cor-cartao);
+  border-radius: var(--raio-cartao);
+  box-shadow: var(--sombra-cartao);
+  padding: 36px 32px 32px;
+}
+
+.cabecalho {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--cor-tinta);
+  letter-spacing: -0.01em;
+}
+
+.subtitulo {
+  margin: 6px 0 0;
+  color: var(--cor-tinta-suave);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.subtituloFinal {
+  color: var(--cor-dourado-escuro);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mesa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.painelJogador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 12px;
+  border-radius: 20px;
+  background: #fffdf8;
+  border: 1px solid var(--cor-linha);
+}
+
+.nomeJogador {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.corJogador1 {
+  color: var(--cor-jogador1);
+}
+
+.corJogador2 {
+  color: var(--cor-jogador2);
+}
+
+.dados {
+  display: flex;
+  gap: 10px;
+  min-height: 64px;
+}
+
+.dadoVazio {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  border: 2px dashed var(--cor-linha);
+  background: repeating-linear-gradient(
+      45deg,
+      transparent 0 8px,
+      rgba(34, 32, 27, 0.04) 8px 9px
+    ),
+    #fdfbf5;
+}
+
+.botaoJogar {
+  padding: 10px 22px;
+  border: none;
+  border-radius: var(--raio-botao);
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.botaoJogar:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.botaoJogar:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.botaoJogador1 {
+  background: var(--cor-jogador1);
+}
+
+.botaoJogador2 {
+  background: var(--cor-jogador2);
+}
+
+.mensagem {
+  text-align: center;
+  min-height: 24px;
+  border: 1px solid var(--cor-linha);
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--cor-tinta);
+  background: var(--cor-jogador1-suave);
+}
+
+.botaoReiniciar {
+  display: block;
+  margin: 18px auto 0;
+  padding: 12px 30px;
+  border: none;
+  border-radius: var(--raio-botao);
+  background: var(--cor-tinta);
+  color: #fbf6ec;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.botaoReiniciar:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 420px) {
+  .cartao {
+    padding: 28px 18px 24px;
+  }
+
+  .painelJogador {
+    padding: 16px 8px;
+  }
+
+  .dados {
+    min-height: 48px;
+  }
+
+  .dadoVazio {
+    width: 48px;
+    height: 48px;
+  }
+}
